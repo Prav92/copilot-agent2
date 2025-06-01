@@ -107,7 +107,9 @@ DATABASES = {
     "default": {
         "ENGINE": "djongo",
         "NAME": "octofit_db",
-        # Additional options can be set here if needed, such as HOST, PORT, USER, PASSWORD
+        "HOST": "localhost",
+        "PORT": 27017,
+        # USER and PASSWORD can be added if authentication is enabled on MongoDB
     }
 }
 
