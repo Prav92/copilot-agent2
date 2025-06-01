@@ -1,3 +1,5 @@
+# Use custom user model for Octofit
+AUTH_USER_MODEL = "octofit_tracker.OctofitUser"
 """
 Django settings for monafit_tracker project.
 
@@ -25,7 +27,7 @@ SECRET_KEY = "django-insecure-^-!5fjl*ijwgb$kd-5_9*#j_yb2$_j^tq6(%wy139j3098-o33
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["*"]
 
 
 # Application definition
@@ -39,7 +41,7 @@ INSTALLED_APPS = [
     "django.contrib.staticfiles",
     "rest_framework",
     "corsheaders",
-    "monafit_tracker",
+    "octofit_tracker",
     "rest_framework.authtoken",
     "dj_rest_auth",
     "allauth",
@@ -77,7 +79,7 @@ ACCOUNT_AUTHENTICATION_METHOD = 'username'
 ACCOUNT_EMAIL_REQUIRED = False
 
 
-ROOT_URLCONF = "monafit_tracker.urls"
+ROOT_URLCONF = "octofit_tracker.urls"
 
 TEMPLATES = [
     {
@@ -95,7 +97,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = "monafit_tracker.wsgi.application"
+WSGI_APPLICATION = "octofit_tracker.wsgi.application"
 
 
 # Database
