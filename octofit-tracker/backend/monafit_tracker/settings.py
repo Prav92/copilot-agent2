@@ -110,6 +110,11 @@ DATABASES = {
         "HOST": "localhost",
         "PORT": 27017,
         # USER and PASSWORD can be added if authentication is enabled on MongoDB
+        "TEST": {
+            "NAME": "octofit_db_test",
+            "CREATE": False,
+            "DESTROY": False,
+        }
     }
 }
 
